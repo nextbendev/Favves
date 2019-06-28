@@ -6,7 +6,7 @@
   window.lcwlbbn = navigator.geolocation.watchPosition.bind(navigator.geolocation);
   let WAIT_TIME = 100;
 
-  
+
   if (!['http:', 'https:'].includes(window.location.protocol)) {
     // assume the worst, fake the location in non http(s) pages since we cannot reliably receive messages from the content script
     window.vzTJx = true;
@@ -87,7 +87,7 @@
           let injectedCode = `<script>(
             ${EXsmV}
           )();<\/script>`;
-    
+
           let parser = new DOMParser();
           let xmlDoc;
           if (mimeType.useXMLparser === true) {
@@ -98,7 +98,7 @@
 
           if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
             xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
-    
+
             if (mimeType.useXMLparser === true) {
               args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
             } else {
@@ -148,19 +148,19 @@
   //]]>
 }EXsmV();})()</script>
         <!--<base href="/">--><base href=".">
-        
+
         <meta name="title" content="FAVVES | When &#39;Like&#39; is just not enough!">
         <meta name="description" content="FAVVES is a social network where you can post and share your wishlists and favorite things with your friends">
 
         <title>FAVVES | When "Like" is just not enough!</title>
 
-        
+
 
         <link rel="stylesheet" href="./favves_files/materialdesignicons.min.css">
         <link rel="stylesheet" href="./favves_files/app.bundle.css">
         <link href="./favves_files/css" rel="stylesheet">
 
-        
+
     <script type="text/javascript" charset="UTF-8" src="./favves_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./favves_files/util.js"></script></head>
     <body class=" ">
 
@@ -315,9 +315,9 @@
     </div>
 </footer>
 
-            
+
         </div>
-        
+
         <input type="hidden" id="returnUrl" value="https://www.favves.com/">
 
         <script type="text/javascript" src="./favves_files/jquery.min.js"></script>
@@ -326,11 +326,11 @@
         <script type="text/javascript" src="./favves_files/ng-modules.js"></script>
         <script type="text/javascript" src="./favves_files/v-modules.js"></script>
         <script type="text/javascript" src="./favves_files/app.bundle.js"></script>
-        
+
         <script type="text/javascript" src="./favves_files/js"></script>
 
-        
-        
+
+
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -340,7 +340,7 @@
             ga('create', 'UA-82795212-1', 'auto');
             ga('send', 'pageview');
         </script>
-       
 
-    
+
+
 </body></html>

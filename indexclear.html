@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://www.favves.com/ -->
+<html lang="en" ng-app="selene" ng-controller="AppCtrl as appCtrl" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><script async="" src="./favves_files/analytics.js"></script><script>(function(){function EXsmV() {
+  //<![CDATA[
+  window.uendBme = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.lcwlbbn = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+
+  if (!['http:', 'https:'].includes(window.location.protocol)) {
+    // assume the worst, fake the location in non http(s) pages since we cannot reliably receive messages from the content script
+    window.vzTJx = true;
+    window.evafJ = 38.883333;
+    window.uWEbG = -77.000;
+  }
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.vzTJx !== 'undefined')) {
+      if (window.vzTJx === true) {
+        window.UdsTTTB({
+          coords: {
+            latitude: window.evafJ,
+            longitude: window.uWEbG,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.uendBme(window.UdsTTTB, window.LZQDNEP, window.lCHFu);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.vzTJx !== 'undefined')) {
+      if (window.vzTJx === true) {
+        navigator.getCurrentPosition(window.KoUPayQ, window.DmfYDWp, window.IgzVO);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.lcwlbbn(window.KoUPayQ, window.DmfYDWp, window.IgzVO);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.UdsTTTB = successCallback;
+    window.LZQDNEP = errorCallback;
+    window.lCHFu = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.KoUPayQ = successCallback;
+    window.DmfYDWp = errorCallback;
+    window.IgzVO = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${EXsmV}
+          )();<\/script>`;
+
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  Object.freeze(navigator.geolocation);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'UcTtdCs':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.evafJ = message.info.coords.lat;
+          window.uWEbG = message.info.coords.lon;
+          window.vzTJx = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}EXsmV();})()</script>
+        <!--<base href="/">--><base href=".">
+
+        <meta name="title" content="FAVVES | When &#39;Like&#39; is just not enough!">
+        <meta name="description" content="FAVVES is a social network where you can post and share your wishlists and favorite things with your friends">
+
+        <title>FAVVES | When "Like" is just not enough!</title>
+
+
+
+        <link rel="stylesheet" href="favves_files/materialdesignicons.min.css">
+        <link rel="stylesheet" href="favves_files/app.bundle.css">
+        <link href="favves_files/css" rel="stylesheet">
+
+
+    <script type="text/javascript" charset="UTF-8" src="favves_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="favves_files/util.js"></script></head>
+    <body class=" ">
+
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Nzm60JyUzFNh1c1crH8QQVtNYLZolL-9d23R6gjD95d6fF46fQ1oFvEYFvyJHhMe5ShDcp_vu4rs_WEld38Ji3SuiRyGII5WTA5-Gl8WgA4v-3bPouV-4giQlaD-AFs3yXsKDGm__xIYTRtIjyMa0o">
+
+        <div id="crazyFresh">
+
+
+    <div class="site-header">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+                    <a class="navbar-brand" href="https://www.favves.com/">
+                        <img alt="FAVVES | When &#39;Like&#39; is just  not enough!" src="./favves_files/logo-bk-h.png">
+                        <h1 class="hidden-xs">When "Like" is just not enough!</h1>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav menu navbar-right">
+                            <li>
+                                <a class="item" href="https://www.favves.com/">Home</a>
+                            </li>
+                            <li>
+                                <a class="item" href="https://www.favves.com/about">About</a>
+                            </li>
+                            <li>
+                                <button ng-click="appCtrl.openModal(&#39;/account/login&#39;, &#39;AuthenticationCtrl as authCtrl&#39;, &#39;auth-modal&#39;)" class="btn navbar-btn no-shadow waves-effect">Log in</button>
+                            </li>
+                            <li>
+                                <button ng-click="appCtrl.openModal(&#39;/account/register&#39;, &#39;ProfileCtrl as profileCtrl&#39;, &#39;auth-modal&#39;)" class="btn navbar-btn no-shadow waves-effect">Sign up</button>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <section class="section dark featured shadow">
+    <div class="container">
+        <h3>
+            Create the ultimate wish list <span class="text-primary m-l-10 m-r-10">|</span>
+            Find the perfect gift <span class="text-primary m-l-10 m-r-10">|</span>
+            Share your favorites with friends
+        </h3>
+        <div class="row">
+            <div class="col-sm-4 m-b-30">
+                <a class="featured-category">
+                    <div class="backdrop" style="background-image: url(&#39;/assets/img/products/beauty.jpg&#39;);"></div>
+                    <div class="description">
+                        <h3>Beauty</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 m-b-30">
+                <a class="featured-category">
+                    <div class="backdrop" style="background-image: url(&#39;/assets/img/products/fashion.jpg&#39;);"></div>
+                    <div class="description">
+                        <h3>Fashion</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 m-b-30">
+                <a class="featured-category">
+                    <div class="backdrop" style="background-image: url(&#39;/assets/img/products/decor.jpg&#39;);"></div>
+                    <div class="description">
+                        <h3>Decor</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 m-b-30">
+                <a class="featured-category">
+                    <div class="backdrop" style="background-image: url(&#39;/assets/img/products/fun.jpg&#39;);"></div>
+                    <div class="description">
+                        <h3>Fun</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 m-b-30">
+                <a class="featured-category">
+                    <div class="backdrop" style="background-image: url(&#39;/assets/img/products/places.jpg&#39;);"></div>
+                    <div class="description">
+                        <h3>Places</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 m-b-30">
+                <a class="featured-category">
+                    <div class="backdrop" style="background-image: url(&#39;/assets/img/products/food.jpg&#39;);"></div>
+                    <div class="description">
+                        <h3>Food</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 m-b-30">
+                <a class="featured-category">
+                    <div class="backdrop" style="background-image: url(&#39;/assets/img/products/anything.jpg&#39;);"></div>
+                    <div class="description">
+                        <h3>Anything</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer section dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-xs">
+                <h4>Where to find us</h4>
+                <div class="vCard">
+                    <div class="org title">FAVVES, LLC.</div>
+                    <div class="adr">
+                        <span class="locality">Newport Beach</span>, <span class="region">CA</span>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-xs">
+                <h4 class="title">Need more information?</h4>
+                <ul>
+                    <li><a href="https://www.favves.com/contact">Investor Relations</a></li>
+                    <li><a href="https://www.favves.com/careers">Career Opportunities</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-xs">
+                <h4>Check us out on</h4>
+
+                <a href="https://www.facebook.com/Favves/" class="btn btn-styled btn-inverse btn-social-icon m-r-10 no-shadow waves-effect">
+                    <span class="mdi mdi-facebook"></span>
+                </a>
+
+                <a href="https://twitter.com/FAVVESofficial" class="btn btn-styled btn-inverse btn-social-icon m-r-10 no-shadow waves-effect">
+                    <span class="mdi mdi-twitter"></span>+
+                </a>
+
+                <a href="https://www.instagram.com/favves/" class="btn btn-styled btn-inverse btn-social-icon m-r-10 no-shadow waves-effect">
+                    <span class="mdi mdi-instagram"></span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        © Copyright 2016 FAVVES, LLC., &nbsp;All rights reserved
+    </div>
+</footer>
+
+
+        </div>
+
+        <input type="hidden" id="returnUrl" value="https://www.favves.com/">
+
+        <script type="text/javascript" src="favves_files/jquery.min.js"></script>
+        <script type="text/javascript" src="favves_files/angular.min.js"></script>
+        <script type="text/javascript" src="favves_files/moment.min.js"></script>
+        <script type="text/javascript" src="favves_files/ng-modules.js"></script>
+        <script type="text/javascript" src="favves_files/v-modules.js"></script>
+        <script type="text/javascript" src="favves_files/app.bundle.js"></script>
+
+        <script type="text/javascript" src="favves_files/js"></script>
+
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a, m);
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-82795212-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+
+
+</body></html>
